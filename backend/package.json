@@ -1,18 +1,25 @@
 {
-  "name": "be",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "engines": {
+    "node": ">=19.8.1"
+  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Owen W.",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "compression": "^1.7.4",
     "cors": "^2.8.5",
-    "express": "^4.21.1"
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
   }
 }
